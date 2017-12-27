@@ -13,4 +13,9 @@ class RecipesController < ApplicationController
 
   def create
   end
+
+  private
+
+  def recipe_params(params)
+  end
 end
