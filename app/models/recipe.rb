@@ -1,9 +1,4 @@
 class Recipe < ActiveRecord::Base
   has_many :ingredients
-
-  def ingredient_name
-  end
-
-  def ingredient_quantity
-  end
+  accepts_nested_attributes_for :ingredients
 end
