@@ -1,4 +1,10 @@
 <%= form_for @recipe do |f| %>
   Title: <%= f.text_field :title %>
-  Recipe Name: <%= f.text_feild :recipe_name %>
+  <%= f.fields_for :ingredients do |ingre| %>
+    <%= ingre.label :street_address_1 %>
+    <%= ingre.text_field :street_address_1 %><br>
+ 
+    <%= ingre.label :street_address_2 %>
+    <%= ingre.text_field :street_address_2 %><br>
+  <% end %>
 <% end %>
