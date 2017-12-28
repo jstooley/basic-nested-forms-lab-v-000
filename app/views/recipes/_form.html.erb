@@ -4,12 +4,12 @@
 
   <%= f.fields_for :ingredients do |ingre| %>
 
-    <%= ingre.label :ingredient_name%>
-    <%= ingre.text_field :ingredient_name %><br>
+    <%= ingre.label :name%>
+    <%= ingre.text_field :name %><br>
 
-    <%= ingre.label :ingredient_quantity %>
-    <%= ingre.text_field :ingredient_quantity %><br>
-    
+    <%= ingre.label :quantity %>
+    <%= ingre.text_field :quantity %><br>
+
   <% end %>
 
   f.submit
