@@ -3,4 +3,7 @@ class Recipe < ActiveRecord::Base
 
   def ingredient_name
   end
+
+  def ingredient_quantity
+  end
 end
